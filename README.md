@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/dml-baileys.svg?style=for-the-badge)](https://www.npmjs.com/package/dml-baileys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![npm downloads](https://img.shields.io/npm/dm/dml-baileys.svg?style=for-the-badge)](https://www.npmjs.com/package/dml-baileys)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/MLILA17/Dml-Baileys1)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/MLILA17/Dml-Baileys)
 
 </div>
 
