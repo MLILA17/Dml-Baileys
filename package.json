@@ -1,6 +1,6 @@
 {
     "name": "Dml-baileys",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "WhatsApp API Modification By Dml",
     "keywords": [
         "whatsapp",
@@ -11,9 +11,9 @@
         "botwa",
         "bails"
     ],
-    "homepage": "https://github.com/MLILA17/Dml-Baileys1",
+    "homepage": "https://github.com/MLILA17/Dml-Baileys",
     "repository": {
-        "url": "https://github.com/MLILA17/Dml-Baileys1"
+        "url": "https://https://github.com/MLILA17/Dml-Baileys"
     },
     "license": "MIT",
     "author": "Adhiraj Singh",
@@ -79,7 +79,7 @@
         "ts-jest": "^27.0.3",
         "ts-node": "^10.8.1",
         "typedoc": "^0.24.7",
-        "typescript": "^4.6.4", 
+        "typescript": "^4.6.4",
         "json": "^11.0.0"
     },
     "peerDependencies": {
