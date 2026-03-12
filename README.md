@@ -878,24 +878,3 @@ If you find **DML-BAILEYS** useful, please consider:
 
 </div>
 ```
-
-For an even more premium look, paste this small top banner above the title:
-
-```markdown
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=DML-BAILEYS;Professional+WhatsApp+Automation+Library;Built+for+Developers;Fast+Reliable+Modern" />
-</p>
-```
-
-And if you want a stronger premium style, use this section under the title too:
-
-```markdown
-<p align="center">
-  <a href="https://www.npmjs.com/package/dml-baileys">
-    <img src="https://img.shields.io/badge/Install-npm%20i%20dml--baileys-00C853?style=for-the-badge&logo=npm&logoColor=white" />
-  </a>
-  <a href="https://github.com/MLILA17/Dml-Baileys">
-    <img src="https://img.shields.io/badge/View-Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-```
