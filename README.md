@@ -1,9 +1,8 @@
-
-
-````markdown
 <div align="center">
 
-# DML-BAILEYS ⭐
+# DML-BAILEYS
+
+Professional WhatsApp automation library built on Baileys (multi-device).
 
 <p align="center">
   <img src="https://img.shields.io/npm/v/dml-baileys.svg?style=for-the-badge" alt="npm version" />
@@ -14,27 +13,19 @@
   </a>
 </p>
 
-<h3>Professional WhatsApp Automation Library Built on Baileys</h3>
-
-<p>
-  A powerful, developer-focused enhancement of the <b>Baileys WhatsApp Web API</b>, designed for
-  modern WhatsApp automation, stability, flexibility, and production-ready workflows.
-</p>
-
-<p>
-  <b>Maintainer:</b> Dml [Dev]
+<p align="center">
+  Maintainer: <b>Dml [Dev]</b>
 </p>
 
 </div>
 
 ---
 
-## ✨ Overview
+## Overview
 
-**DML-BAILEYS** is a professionally enhanced implementation of the Baileys WhatsApp Web API.  
-It is built for developers who need a clean development experience, robust automation features, and flexible integration options for WhatsApp-based applications.
+**DML-BAILEYS** is a developer-focused enhancement of the **Baileys WhatsApp Web API** built for modern WhatsApp automation: stability, clean integration, and production-ready workflows.
 
-Whether you are creating:
+Use it to build:
 
 - WhatsApp bots
 - automated responders
@@ -43,120 +34,82 @@ Whether you are creating:
 - support tools
 - internal integrations
 
-DML-BAILEYS gives you a strong and practical foundation for building them efficiently.
+---
+
+## Highlights
+
+- **Modern event-driven architecture**
+- **WhatsApp multi-device support**
+- **Messaging support** (text, media, reactions, polls, etc.)
+- **Group management** (create, participants, settings, invite links)
+- **Flexible auth strategies** (multi-file, custom DB)
+- **Production-friendly patterns** (reconnect handling, stores, caching)
 
 ---
 
-## 🚀 Highlights
+## Table of Contents
 
-- ⚡ **Fast and modern architecture**
-- 🔐 **Secure multi-device WhatsApp support**
-- 📩 **Comprehensive messaging capabilities**
-- 👥 **Advanced group management tools**
-- 🛠️ **Developer-friendly API design**
-- 💾 **Flexible authentication handling**
-- 🔄 **Reliable reconnection workflows**
-- 📚 **Well-structured examples and usage patterns**
-
----
-
-## 📚 Table of Contents
-
-- [✨ Overview](#-overview)
-- [🚀 Highlights](#-highlights)
-- [🔥 Features](#-features)
-- [📦 Installation](#-installation)
-- [🚀 Quick Start](#-quick-start)
-- [🔌 Connection and Configuration](#-connection-and-configuration)
-- [💾 Authentication State Management](#-authentication-state-management)
-- [📤 Sending Messages](#-sending-messages)
-- [📁 Chat and Message Management](#-chat-and-message-management)
-- [👥 Group Management](#-group-management)
-- [👤 User and Profile Management](#-user-and-profile-management)
-- [🔒 Privacy and Block Management](#-privacy-and-block-management)
-- [🗄️ Data Store Implementation](#️-data-store-implementation)
-- [🛠️ Utility Functions](#️-utility-functions)
-- [💡 Best Practices](#-best-practices)
-- [⚠️ Legal Notice](#️-legal-notice)
-- [🆘 Getting Help](#-getting-help)
-- [📄 License](#-license)
-- [🤝 Contributing](#-contributing)
+- [Overview](#overview)
+- [Highlights](#highlights)
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Connection & Configuration](#connection--configuration)
+- [Authentication State](#authentication-state)
+- [Sending Messages](#sending-messages)
+- [Chat & Message Management](#chat--message-management)
+- [Group Management](#group-management)
+- [User & Profile Management](#user--profile-management)
+- [Privacy & Block Management](#privacy--block-management)
+- [Data Store](#data-store)
+- [Utilities](#utilities)
+- [Best Practices](#best-practices)
+- [Legal Notice](#legal-notice)
+- [Support](#support)
+- [License](#license)
+- [Contributing](#contributing)
 
 ---
 
-## 🔥 Features
+## Features
 
-### Core Capabilities
+### Core capabilities
+- Full support for **WhatsApp multi-device**
+- Reliable event-based workflows
+- Compatibility with Baileys-based projects
 
-- ✅ Full support for **WhatsApp multi-device**
-- ✅ Enhanced developer experience with clean APIs
-- ✅ Reliable event-based architecture
-- ✅ Easy integration into bots and automation tools
-- ✅ Strong compatibility with existing Baileys-based projects
+### Messaging
+- Text, images, video, audio/PTT, documents
+- Contacts (vCard), locations
+- Polls, reactions
+- Mentions, replies, forwarding
+- Edit/delete (where supported)
 
-### Messaging Support
+### Groups
+- Create & manage groups
+- Add/remove/promote/demote participants
+- Update subject/description
+- Group settings (announcement/locked)
+- Invite links & metadata
 
-- ✅ Text messages
-- ✅ Image messages
-- ✅ Video messages
-- ✅ Audio and voice notes
-- ✅ Documents
-- ✅ Contacts
-- ✅ Locations
-- ✅ Polls
-- ✅ Reactions
-- ✅ Mentions and replies
-- ✅ Message forwarding
-
-### Group Features
-
-- ✅ Create and manage groups
-- ✅ Add, remove, promote, and demote participants
-- ✅ Update subject and description
-- ✅ Control group settings
-- ✅ Handle invite links
-- ✅ Group status support
-
-### Developer Features
-
-- ✅ Flexible auth storage strategies
-- ✅ Support for custom stores and databases
-- ✅ Utility helpers for JIDs and content
-- ✅ Debugging and event inspection tools
-- ✅ Production-friendly patterns and examples
+### Developer/Integration
+- Flexible auth storage strategies
+- Works with custom databases / stores
+- Helpers for JIDs and message content
 
 ---
 
-## 📦 Installation
+## Installation
 
-Choose the method that best fits your workflow.
-
-### 1. Install from npm
-
-Recommended for most users:
+### Option A: Install from npm (recommended)
 
 ```bash
 npm install dml-baileys
-````
-
----
-
-### 2. Use as an alias for `@whiskeysockets/baileys`
-
-This lets you continue importing `@whiskeysockets/baileys` while resolving to **DML-BAILEYS**.
-
-#### Using GitHub
-
-```json
-{
-  "dependencies": {
-    "@whiskeysockets/baileys": "github:MLILA17/Dml-Baileys1.git"
-  }
-}
 ```
 
-#### Using npm alias
+### Option B: Use as an alias for `@whiskeysockets/baileys`
 
+**Using npm alias**
 ```json
 {
   "dependencies": {
@@ -165,101 +118,78 @@ This lets you continue importing `@whiskeysockets/baileys` while resolving to **
 }
 ```
 
-Then run:
-
+Then:
 ```bash
 npm install
 ```
 
----
-
-### 3. Install directly from GitHub
+### Option C: Install directly from GitHub
 
 ```bash
 npm install https://github.com/MLILA17/Dml-Baileys1.git
 ```
 
----
-
-### 4. Using Yarn
+### Yarn
 
 ```bash
 yarn add dml-baileys
-```
-
-Or from GitHub:
-
-```bash
+# or
 yarn add https://github.com/MLILA17/Dml-Baileys1.git
 ```
 
 ---
 
-### 5. Local development setup
-
-```bash
-git clone https://github.com/MLILA17/Dml-Baileys1.git
-cd your-project
-npm install /path/to/cloned/Dml-Baileys1
-```
-
----
-
-## 🚀 Quick Start
-
-### Basic connection example
+## Quick Start
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Basic connection example</b></summary>
 
-```javascript
+```js
 const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 
 async function connectToWhatsApp() {
-    const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
+  const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
 
-    const sock = makeWASocket({
-        auth: state,
-        printQRInTerminal: true,
-        browser: ["Ubuntu", "Chrome", "125"],
-        logger: console,
-    });
+  const sock = makeWASocket({
+    auth: state,
+    printQRInTerminal: true,
+    browser: ["Ubuntu", "Chrome", "125"],
+    logger: console
+  });
 
-    sock.ev.on('connection.update', (update) => {
-        const { connection, lastDisconnect } = update;
+  sock.ev.on('connection.update', (update) => {
+    const { connection, lastDisconnect } = update;
 
-        if (connection === 'close') {
-            const shouldReconnect =
-                (lastDisconnect?.error)?.output?.statusCode !== DisconnectReason.loggedOut;
+    if (connection === 'close') {
+      const shouldReconnect =
+        (lastDisconnect?.error)?.output?.statusCode !== DisconnectReason.loggedOut;
 
-            console.log('Connection closed:', lastDisconnect?.error);
+      console.log('Connection closed:', lastDisconnect?.error);
 
-            if (shouldReconnect) {
-                connectToWhatsApp();
-            }
-        } else if (connection === 'open') {
-            console.log('✅ Successfully connected to WhatsApp');
+      if (shouldReconnect) connectToWhatsApp();
+    }
 
-            const selfJid = sock.user.id;
-            sock.sendMessage(selfJid, {
-                text: 'Hello! I am online using dml-baileys 🤖'
-            });
-        }
-    });
+    if (connection === 'open') {
+      console.log('Connected to WhatsApp');
 
-    sock.ev.on('messages.upsert', async ({ messages }) => {
-        for (const m of messages) {
-            if (!m.message) continue;
+      const selfJid = sock.user.id;
+      sock.sendMessage(selfJid, { text: 'Hello! I am online using dml-baileys.' });
+    }
+  });
 
-            if (m.message.conversation) {
-                await sock.sendMessage(m.key.remoteJid, {
-                    text: `You said: "${m.message.conversation}"`
-                });
-            }
-        }
-    });
+  sock.ev.on('messages.upsert', async ({ messages }) => {
+    for (const m of messages) {
+      if (!m.message) continue;
 
-    sock.ev.on('creds.update', saveCreds);
+      if (m.message.conversation) {
+        await sock.sendMessage(m.key.remoteJid, {
+          text: `You said: "${m.message.conversation}"`
+        });
+      }
+    }
+  });
+
+  sock.ev.on('creds.update', saveCreds);
 }
 
 connectToWhatsApp().catch(console.error);
@@ -267,79 +197,70 @@ connectToWhatsApp().catch(console.error);
 
 </details>
 
----
-
-### Pairing code example
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Pairing code example</b></summary>
 
-```javascript
+```js
 const { makeWASocket } = require('@whiskeysockets/baileys');
 
-const sock = makeWASocket({
-    printQRInTerminal: false
-});
+async function pair() {
+  const sock = makeWASocket({ printQRInTerminal: false });
 
-if (!sock.authState.creds.registered) {
-    const phoneNumber = '1234567890'; // country code included
+  if (!sock.authState.creds.registered) {
+    const phoneNumber = '1234567890'; // include country code
     const pairingCode = await sock.requestPairingCode(phoneNumber);
-
-    console.log('🔑 Pairing Code:', pairingCode);
+    console.log('Pairing Code:', pairingCode);
+  }
 }
+
+pair().catch(console.error);
 ```
 
 </details>
 
 ---
 
-## 🔌 Connection and Configuration
-
-### Browser presets
+## Connection & Configuration
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Browser presets</b></summary>
 
-```javascript
+```js
 const { makeWASocket, Browsers } = require('@whiskeysockets/baileys');
 
 const sock = makeWASocket({
-    browser: Browsers.ubuntu('MyApp'),
-    // browser: Browsers.macOS('MyApp'),
-    // browser: Browsers.windows('MyApp'),
-    printQRInTerminal: true,
-    syncFullHistory: true,
+  browser: Browsers.ubuntu('MyApp'),
+  // browser: Browsers.macOS('MyApp'),
+  // browser: Browsers.windows('MyApp'),
+  printQRInTerminal: true,
+  syncFullHistory: true
 });
 ```
 
 </details>
 
----
-
-### Advanced socket configuration
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Advanced socket configuration</b></summary>
 
-```javascript
+```js
 const NodeCache = require('node-cache');
 const groupCache = new NodeCache({ stdTTL: 300, useClones: false });
 
 const sock = makeWASocket({
-    cachedGroupMetadata: async (jid) => groupCache.get(jid),
+  cachedGroupMetadata: async (jid) => groupCache.get(jid),
 
-    getMessage: async (key) => {
-        return await yourDatabase.getMessage(key);
-    },
+  getMessage: async (key) => {
+    // return await yourDatabase.getMessage(key);
+  },
 
-    markOnlineOnConnect: false,
-    connectTimeoutMs: 60000,
-    defaultQueryTimeoutMs: 60000,
+  markOnlineOnConnect: false,
+  connectTimeoutMs: 60000,
+  defaultQueryTimeoutMs: 60000
 });
 
 sock.ev.on('groups.update', async ([event]) => {
-    const metadata = await sock.groupMetadata(event.id);
-    groupCache.set(event.id, metadata);
+  const metadata = await sock.groupMetadata(event.id);
+  groupCache.set(event.id, metadata);
 });
 ```
 
@@ -347,23 +268,44 @@ sock.ev.on('groups.update', async ([event]) => {
 
 ---
 
-## 💾 Authentication State Management
-
-### Multi-file auth state
-
-Recommended for development.
+## Authentication State
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Multi-file auth (development)</b></summary>
 
-```javascript
+```js
 const { makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
 
 async function connect() {
-    const { state, saveCreds } = await useMultiFileAuthState('auth_info_directory');
-    const sock = makeWASocket({ auth: state });
+  const { state, saveCreds } = await useMultiFileAuthState('auth_info_directory');
+  const sock = makeWASocket({ auth: state });
 
-    sock.ev.on('creds.update', saveCreds);
+  sock.ev.on('creds.update', saveCreds);
+}
+```
+
+</details>
+
+<details>
+<summary><b>Click to expand: Custom database auth (production)</b></summary>
+
+```js
+const { makeWASocket, makeCacheableSignalKeyStore } = require('@whiskeysockets/baileys');
+
+async function connect() {
+  const myAuthState = {
+    creds: await yourDatabase.getAuthCreds(),
+    keys: makeCacheableSignalKeyStore(
+      await yourDatabase.getSignalKeys(),
+      console.log
+    )
+  };
+
+  const sock = makeWASocket({ auth: myAuthState });
+
+  sock.ev.on('creds.update', async (creds) => {
+    await yourDatabase.saveAuthCreds(creds);
+  });
 }
 ```
 
@@ -371,110 +313,84 @@ async function connect() {
 
 ---
 
-### Custom database auth state
-
-Recommended for production.
+## Sending Messages
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Text / mentions / replies</b></summary>
 
-```javascript
-const { makeWASocket, makeCacheableSignalKeyStore } = require('@whiskeysockets/baileys');
-
-const myAuthState = {
-    creds: await yourDatabase.getAuthCreds(),
-    keys: makeCacheableSignalKeyStore(
-        await yourDatabase.getSignalKeys(),
-        console.log
-    )
-};
-
-const sock = makeWASocket({ auth: myAuthState });
-
-sock.ev.on('creds.update', async (creds) => {
-    await yourDatabase.saveAuthCreds(creds);
-});
-```
-
-</details>
-
----
-
-## 📤 Sending Messages
-
-### Basic messages
-
-<details>
-<summary><b>Click to expand code</b></summary>
-
-```javascript
+```js
 await sock.sendMessage(jid, { text: 'Hello World!' });
 
 await sock.sendMessage(jid, {
-    text: 'Hello @12345678901!',
-    mentions: ['12345678901@s.whatsapp.net']
+  text: 'Hello @12345678901!',
+  mentions: ['12345678901@s.whatsapp.net']
 });
 
 await sock.sendMessage(
-    jid,
-    { text: 'This is a reply!' },
-    { quoted: originalMessage }
+  jid,
+  { text: 'This is a reply!' },
+  { quoted: originalMessage }
 );
+```
 
+</details>
+
+<details>
+<summary><b>Click to expand: Forward / edit / delete</b></summary>
+
+```js
 await sock.sendMessage(jid, { forward: messageToForward });
+
+const sentMsg = await sock.sendMessage(jid, { text: 'This will be deleted' });
+await sock.sendMessage(jid, { delete: sentMsg.key });
+
+const response = await sock.sendMessage(jid, { text: 'Original text' });
+await sock.sendMessage(jid, { text: 'Updated text!', edit: response.key });
 ```
 
 </details>
 
----
-
-### Media messages
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Media messages</b></summary>
 
-```javascript
+```js
 await sock.sendMessage(jid, {
-    image: { url: './path/to/image.jpg' },
-    caption: 'Check out this image!',
-    mimetype: 'image/jpeg'
+  image: { url: './path/to/image.jpg' },
+  caption: 'Check out this image!',
+  mimetype: 'image/jpeg'
 });
 
 await sock.sendMessage(jid, {
-    video: { url: './path/to/video.mp4' },
-    caption: 'Watch this video',
-    gifPlayback: true
+  video: { url: './path/to/video.mp4' },
+  caption: 'Watch this video',
+  gifPlayback: true
 });
 
 await sock.sendMessage(jid, {
-    audio: { url: './path/to/audio.ogg' },
-    mimetype: 'audio/ogg; codecs=opus',
-    ptt: true
+  audio: { url: './path/to/audio.ogg' },
+  mimetype: 'audio/ogg; codecs=opus',
+  ptt: true
 });
 
 await sock.sendMessage(jid, {
-    document: { url: './path/to/document.pdf' },
-    fileName: 'ImportantDocument.pdf',
-    mimetype: 'application/pdf'
+  document: { url: './path/to/document.pdf' },
+  fileName: 'ImportantDocument.pdf',
+  mimetype: 'application/pdf'
 });
 ```
 
 </details>
 
----
-
-### Interactive content
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Interactive (location / contacts / polls / reactions)</b></summary>
 
-```javascript
+```js
 await sock.sendMessage(jid, {
-    location: {
-        degreesLatitude: 40.7128,
-        degreesLongitude: -74.0060,
-        name: 'New York City'
-    }
+  location: {
+    degreesLatitude: 40.7128,
+    degreesLongitude: -74.0060,
+    name: 'New York City'
+  }
 });
 
 const vcard = `BEGIN:VCARD
@@ -486,25 +402,25 @@ EMAIL:john@example.com
 END:VCARD`;
 
 await sock.sendMessage(jid, {
-    contacts: {
-        displayName: 'John Doe',
-        contacts: [{ vcard }]
-    }
+  contacts: {
+    displayName: 'John Doe',
+    contacts: [{ vcard }]
+  }
 });
 
 await sock.sendMessage(jid, {
-    poll: {
-        name: 'Favorite Programming Language?',
-        values: ['JavaScript', 'Python', 'TypeScript', 'Go', 'Rust'],
-        selectableCount: 1
-    }
+  poll: {
+    name: 'Favorite Programming Language?',
+    values: ['JavaScript', 'Python', 'TypeScript', 'Go', 'Rust'],
+    selectableCount: 1
+  }
 });
 
 await sock.sendMessage(jid, {
-    react: {
-        text: '👍',
-        key: targetMessage.key
-    }
+  react: {
+    text: '👍',
+    key: targetMessage.key
+  }
 });
 ```
 
@@ -512,14 +428,12 @@ await sock.sendMessage(jid, {
 
 ---
 
-## 📁 Chat and Message Management
-
-### Chat operations
+## Chat & Message Management
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Chat operations</b></summary>
 
-```javascript
+```js
 await sock.chatModify({ archive: true }, jid);
 await sock.chatModify({ archive: false }, jid);
 
@@ -537,22 +451,12 @@ await sock.chatModify({ delete: true }, jid);
 
 </details>
 
----
-
-### Message operations
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Message operations</b></summary>
 
-```javascript
+```js
 const sentMsg = await sock.sendMessage(jid, { text: 'This will be deleted' });
 await sock.sendMessage(jid, { delete: sentMsg.key });
-
-const response = await sock.sendMessage(jid, { text: 'Original text' });
-await sock.sendMessage(jid, {
-    text: 'Updated text!',
-    edit: response.key
-});
 
 await sock.readMessages([messageKey1, messageKey2]);
 ```
@@ -561,37 +465,35 @@ await sock.readMessages([messageKey1, messageKey2]);
 
 ---
 
-## 👥 Group Management
-
-### Group operations
+## Group Management
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Group operations</b></summary>
 
-```javascript
+```js
 const group = await sock.groupCreate('My New Group', [
-    '12345678901@s.whatsapp.net',
-    '09876543210@s.whatsapp.net'
+  '12345678901@s.whatsapp.net',
+  '09876543210@s.whatsapp.net'
 ]);
 
 await sock.groupParticipantsUpdate(
-    groupJid,
-    ['12345678901@s.whatsapp.net'],
-    'add'
+  group.id,
+  ['12345678901@s.whatsapp.net'],
+  'add'
 );
 
-await sock.groupUpdateSubject(groupJid, 'New Group Name');
-await sock.groupUpdateDescription(groupJid, 'New group description');
+await sock.groupUpdateSubject(group.id, 'New Group Name');
+await sock.groupUpdateDescription(group.id, 'New group description');
 
-await sock.groupSettingUpdate(groupJid, 'announcement');
-await sock.groupSettingUpdate(groupJid, 'not_announcement');
-await sock.groupSettingUpdate(groupJid, 'locked');
-await sock.groupSettingUpdate(groupJid, 'unlocked');
+await sock.groupSettingUpdate(group.id, 'announcement');
+await sock.groupSettingUpdate(group.id, 'not_announcement');
+await sock.groupSettingUpdate(group.id, 'locked');
+await sock.groupSettingUpdate(group.id, 'unlocked');
 
-const inviteCode = await sock.groupInviteCode(groupJid);
+const inviteCode = await sock.groupInviteCode(group.id);
 const inviteLink = `https://chat.whatsapp.com/${inviteCode}`;
 
-const metadata = await sock.groupMetadata(groupJid);
+const metadata = await sock.groupMetadata(group.id);
 console.log(metadata);
 ```
 
@@ -599,51 +501,36 @@ console.log(metadata);
 
 ---
 
-## 👤 User and Profile Management
-
-### User operations
+## User & Profile Management
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: User/profile operations</b></summary>
 
-```javascript
+```js
 const [result] = await sock.onWhatsApp('12345678901@s.whatsapp.net');
 
 if (result.exists) {
-    console.log(`User exists with JID: ${result.jid}`);
+  console.log(`User exists with JID: ${result.jid}`);
 }
 
 const profilePic = await sock.profilePictureUrl('12345678901@s.whatsapp.net');
 const status = await sock.fetchStatus('12345678901@s.whatsapp.net');
 const businessProfile = await sock.getBusinessProfile('12345678901@s.whatsapp.net');
-```
 
-</details>
-
----
-
-### Profile operations
-
-<details>
-<summary><b>Click to expand code</b></summary>
-
-```javascript
 await sock.updateProfileName('Your New Name');
-await sock.updateProfileStatus('Online and coding! 🚀');
+await sock.updateProfileStatus('Online');
 ```
 
 </details>
 
 ---
 
-## 🔒 Privacy and Block Management
-
-### Privacy settings
+## Privacy & Block Management
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Privacy settings</b></summary>
 
-```javascript
+```js
 await sock.updateLastSeenPrivacy('contacts');
 await sock.updateOnlinePrivacy('match_last_seen');
 await sock.updateProfilePicturePrivacy('contacts');
@@ -656,14 +543,10 @@ const privacySettings = await sock.fetchPrivacySettings(true);
 
 </details>
 
----
-
-### Block management
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Block management</b></summary>
 
-```javascript
+```js
 await sock.updateBlockStatus(jid, 'block');
 await sock.updateBlockStatus(jid, 'unblock');
 
@@ -674,22 +557,20 @@ const blocklist = await sock.fetchBlocklist();
 
 ---
 
-## 🗄️ Data Store Implementation
-
-### In-memory store
+## Data Store
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: In-memory store</b></summary>
 
-```javascript
-const { makeInMemoryStore } = require('@whiskeysockets/baileys');
+```js
+const { makeWASocket, makeInMemoryStore } = require('@whiskeysockets/baileys');
 
 const store = makeInMemoryStore({ logger: console });
 
 store.readFromFile('./baileys_store.json');
 
 setInterval(() => {
-    store.writeToFile('./baileys_store.json');
+  store.writeToFile('./baileys_store.json');
 }, 10000);
 
 const sock = makeWASocket({});
@@ -698,55 +579,49 @@ store.bind(sock.ev);
 
 </details>
 
----
-
-### Custom production store
-
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Custom production store (example)</b></summary>
 
-```javascript
+```js
 class MyCustomStore {
-    async saveMessage(key, message) {
-        await yourDatabase.messages.insertOne({ key, message });
-    }
+  async saveMessage(key, message) {
+    await yourDatabase.messages.insertOne({ key, message });
+  }
 
-    async loadMessage(key) {
-        return await yourDatabase.messages.findOne({ key });
-    }
+  async loadMessage(key) {
+    return await yourDatabase.messages.findOne({ key });
+  }
 }
-
-const myStore = new MyCustomStore();
 ```
 
 </details>
 
 ---
 
-## 🛠️ Utility Functions
+## Utilities
 
 <details>
-<summary><b>Click to expand code</b></summary>
+<summary><b>Click to expand: Utility helpers</b></summary>
 
-```javascript
+```js
 const {
-    getContentType,
-    areJidsSameUser,
-    isJidGroup,
-    isJidBroadcast,
-    isJidStatusBroadcast,
-    jidNormalizedUser,
-    generateMessageID,
-    generateWAMessageContent,
-    downloadContentFromMessage,
-    getAggregateVotesInPollMessage,
-    proto
+  getContentType,
+  areJidsSameUser,
+  isJidGroup,
+  isJidBroadcast,
+  isJidStatusBroadcast,
+  jidNormalizedUser,
+  generateMessageID,
+  generateWAMessageContent,
+  downloadContentFromMessage,
+  getAggregateVotesInPollMessage,
+  proto
 } = require('@whiskeysockets/baileys');
 
 const messageType = getContentType(message);
 
 if (isJidGroup(jid)) {
-    console.log('This is a group JID');
+  console.log('This is a group JID');
 }
 ```
 
@@ -754,127 +629,57 @@ if (isJidGroup(jid)) {
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
-### Performance
-
-* Cache group metadata whenever possible
-* Use persistent storage for production
-* Implement reconnection logic carefully
-* Respect WhatsApp rate limits
-* Handle errors in every critical operation
-
-### Security
-
-* Never hardcode credentials
-* Use environment variables
-* Store auth data securely
-* Validate all incoming input
-* Keep dependencies updated
-
-### Recommended production mindset
-
-* Use structured logs
-* Add retry logic where necessary
-* Monitor failures and disconnections
-* Keep a backup strategy for auth/session data
-* Test messaging flows with small volumes first
+- Cache group metadata where possible
+- Use persistent storage in production
+- Implement reconnection logic carefully
+- Respect WhatsApp rate limits
+- Never hardcode credentials (use env vars)
+- Keep dependencies updated
 
 ---
 
-## ⚠️ Legal Notice
+## Legal Notice
 
-**DML-BAILEYS is not affiliated with, endorsed by, authorized by, or officially connected to WhatsApp LLC.**
+DML-BAILEYS is **not affiliated with, endorsed by, or officially connected to WhatsApp LLC**.
 
-“WhatsApp” and all related names, logos, and trademarks belong to their respective owners.
+“WhatsApp” and related names/logos/trademarks belong to their respective owners.
 
-### Responsible Use
-
-* Use this library only for lawful and ethical purposes
-* Do not use it for spam, harassment, or abuse
-* Respect user privacy and consent
-* Follow WhatsApp platform expectations and rate limits
-* The maintainer is not responsible for misuse
+**Responsible use**
+- Use only for lawful and ethical purposes
+- Do not use for spam/abuse
+- Respect privacy and consent
+- Maintainer is not responsible for misuse
 
 ---
 
-## 🆘 Getting Help
+## Support
 
-If you need support:
-
-* Review this README first
-* Check the official Baileys documentation
-* Open an issue on GitHub for bugs or feature requests
-* Contact directly for serious support needs
+- Review this README first
+- Check Baileys documentation (upstream)
+- Open a GitHub issue for bugs/feature requests
 
 **Direct Contact:** `+255713541112`
 
 When reporting issues, include:
-
-* Node.js version
-* package version
-* error logs
-* reproduction steps
-
----
-
-## 📄 License
-
-This project is distributed under the **MIT License**.
-See the [LICENSE](LICENSE) file for full details.
-
-### Credits
-
-Special thanks to:
-
-* **Baileys** by WhiskeySockets
-* the open-source community
-* contributors and testers supporting this project
+- Node.js version
+- package version
+- error logs
+- reproduction steps
 
 ---
 
-## 🤝 Contributing
+## License
 
-Contributions are welcome.
+MIT License — see `LICENSE`.
+
+---
+
+## Contributing
 
 1. Fork the repository
-2. Create a new branch
-
-```bash
-git checkout -b feature/amazing-feature
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add amazing feature"
-```
-
-4. Push to your branch
-
-```bash
-git push origin feature/amazing-feature
-```
-
+2. Create a branch: `git checkout -b feature/amazing-feature`
+3. Commit: `git commit -m "Add amazing feature"`
+4. Push: `git push origin feature/amazing-feature`
 5. Open a Pull Request
-
-For large changes, open an issue first so the idea can be discussed properly.
-
----
-
-<div align="center">
-
-## 🌟 Support the Project
-
-If you find **DML-BAILEYS** useful, please consider:
-
-⭐ Starring the repository
-🍴 Forking the project
-📢 Sharing it with other developers
-
-### Crafted with ❤️ by Dml [Dev]
-
-**Empowering developers with modern WhatsApp automation tools**
-
-</div>
-```
